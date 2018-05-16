@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Faculdade Impacta de Tecnologia</title>
+
+    <link rel="icon" href="favicon.ico" />
+    {% load static %}
+	<link href="{% static "index.css" %}" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-login">
+    <header>
+            <ul class="uldropbtn">
+                    <li class="menudropbtn"><a src="#"></a></li>
+                    <li class="menudropbtn"><a href="">Home</a></li>
+                      <li class="menudropbtn"><a href="login">Login</a></li>
+                      <li class="dropdown">
+                        <a href="cursos" class="dropbtn">Cursos</a>
+                        <div class="dropdown-content">
+                          <a href="#">Administração</a>
+                          <a href="ads.html">Análise e Desenvolvimento de Sistemas</a>
+                          <a href="#">Banco de dados</a>
+                          <a href="#">Gestão da Tecnologia da informação</a>
+                          <a href="#">Jogos Digitais</a>
+                          <a href="#">Processos Gerenciais</a>
+                          <a href="#">Produção Multimídia</a>
+                          <a href="#">Redes de Computadores</a>
+                          <a href="#">Sistemas de Informação</a>
+                        </div>
+                      </li>
+                    </ul>
+    </header>  <h1 id='novoalunocadastro'>Cadastro de Novo Aluno</h1>
+  <div class="containers" id="nov">
+        <form name="frmcpf" id='formulario' method="post">
+          <fieldset>
+              <div class="containerInputForm">
+                <label for="login" class="labelForm">Login</label>:
+                <input type="text" name="Login" id="login" class="obrigatorios"><br>
+              </div>
+
+              <div class="containerInputForm">
+                <label for="nome" class="labelForm">Nome Completo</label>:<br>
+                <input type="text" name="Nome Completo" id="nome" class="obrigatorios"><br>
+              </div>
+
+              <div class="containerInputForm">
+                <label for="email" class="labelForm">Email</label>:<br>
+                <input type="email" name="Email" id="email" placeholder="email@email.com" class="obrigatorios"><br>
+              </div>
+
+              <div class="containerInputForm">
+                <label for="celular" class="labelForm">Celular</label>:<br>
+                <input type="tel" name="Celular" id="celular" class="inputs"><br>
+              </div>
+
+            <div class="containerInputForm">
+                <label for="nascimento">Nascimento</label>:<br>
+                <input type="date" name="Nascimento" id="nascimento" class="obrigatorios" required="">
+                <label for="idade"></label>
+                <input type="num" name="idade" id="idadeval" hidden  class="validate[required,funcCall[checkIdade]]" placeholder="Idade" disabled>
+                </div>
+              
+              <div class="containerInputForm">
+                <label for="cpf" class="labelForm">CPF</label>:<br>
+                <input type="text" name="CPF" id="cpf" maxlength="11" class="obrigatorios"><br>
+              </div>
+
+              <div class="containerInputForm">
+                <label for="senha" class="labelForm">Senha</label>:<br>
+                <input type="password" name="Senha" id="senha" class="obrigatorios"><br>
+              </div>
+
+              <div class="containerInputForm">
+                <label for="confirma_senha" class="labelForm">Confirmação de Senha</label>:<br>
+                <input type="password" name="Confirmação de Senha" id="confirma_senha" class="obrigatorios"><br>
+              </div>
+
+                <br/><br/>
+              <div class="btnNovoAluno">
+                <input type="submit" value="Enviar" onclick="return validateForm(event)">
+                <input type="reset" value="Limpar">
+              </div>
+          </fieldset>
+        </form>
+    </div>
+</main>
+<footer>
+        <hr />11 3254-8300 - Impacta 2018 - Todos os direitos reservados.
+    </footer>
+</body>
+</html>
