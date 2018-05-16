@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Faculdade Impacta de Tecnologia</title>
+
+    <link rel="icon" href="favicon.ico" />
+    {% load static %}
+	<link href="{% static "index.css" %}" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-login">
+    <header>
+            <ul class="uldropbtn">
+                    <li class="menudropbtn"><a src="#"></a></li>
+                    <li class="menudropbtn"><a href="">Home</a></li>
+                      <li class="menudropbtn"><a href="login">Login</a></li>
+                      <li class="dropdown">
+                        <a href="cursos" class="dropbtn">Cursos</a>
+                        <div class="dropdown-content">
+                          <a href="#">Administração</a>
+                          <a href="ads.html">Análise e Desenvolvimento de Sistemas</a>
+                          <a href="#">Banco de dados</a>
+                          <a href="#">Gestão da Tecnologia da informação</a>
+                          <a href="#">Jogos Digitais</a>
+                          <a href="#">Processos Gerenciais</a>
+                          <a href="#">Produção Multimídia</a>
+                          <a href="#">Redes de Computadores</a>
+                          <a href="#">Sistemas de Informação</a>
+                        </div>
+                      </li>
+                    </ul>
+    </header>
+    <main>
+        <h1>Entrar</h1>
+        
+        <form name="login" method="post">
+            <label for="login-email">
+                E-Mail:
+                <input type="email" id="login-email" name="email" placeholder="exemplo@exemplo.com" />
+            </label>
+            <br/><br/>
+            <label for="login-senha">
+                Senha:
+                <input type="password" id="login-senha" name="senha" />
+            </label><br/>
+            <br/>
+            <label for="login-lembrar"><input type="checkbox" id="login-lembrar" name="lembrar" value="S"/> Lembrar de mim?</label>
+            <br/><br/>
+            <a href="#">Esqueceu a senha?</a> - <a href="#">Não possui conta? Clique aqui para registrar</a>
+            <br/><br/>
+            <button id="enviar" type="submit">Enviar</button>
+            
+        </form>
+
+    </main>
+    <footer>
+        <hr />11 3254-8300 - Impacta 2018 - Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
